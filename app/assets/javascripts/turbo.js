@@ -1015,9 +1015,9 @@ class StreamElement extends HTMLElement {
 
 FrameElement.delegateConstructor = FrameController;
 
-customElements.define("turbo-frame", FrameElement);
+customElements.get("turbo-frame") || customElements.define("turbo-frame", FrameElement);
 
-customElements.define("turbo-stream", StreamElement);
+customElements.get("turbo-stream") || customElements.define("turbo-stream", StreamElement);
 
 (() => {
   let element = document.currentScript;
@@ -2826,7 +2826,8 @@ class TurboCableStreamSourceElement extends HTMLElement {
   }
 }
 
-customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement);
+customElements.get("turbo-cable-stream-source") ||
+  customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement);
 
 var adapters = {
   logger: self.console,

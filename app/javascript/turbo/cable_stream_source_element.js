@@ -24,4 +24,5 @@ class TurboCableStreamSourceElement extends HTMLElement {
   }
 }
 
-customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement)
+customElements.get("turbo-cable-stream-source") ||
+  customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement)
