@@ -31,6 +31,8 @@ function clickCaptured(event) {
 
 (function() {
   if ("SubmitEvent" in window) return;
+  if ("submitter" in Event.prototype) return;
+
   addEventListener("click", clickCaptured, true);
   Object.defineProperty(Event.prototype, "submitter", {
     get() {
