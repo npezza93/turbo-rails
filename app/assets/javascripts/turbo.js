@@ -596,7 +596,7 @@ class FetchRequest {
     this.fetchOptions = {
       credentials: "same-origin",
       redirect: "follow",
-      method: method,
+      method: method.toUpperCase(),
       headers: {
         ...this.defaultHeaders
       },
@@ -616,7 +616,7 @@ class FetchRequest {
     const [url, body] = buildResourceAndBody(this.url, fetchMethod, fetchBody, this.enctype);
     this.url = url;
     this.fetchOptions.body = body;
-    this.fetchOptions.method = fetchMethod;
+    this.fetchOptions.method = fetchMethod.toUpperCase()
   }
   get headers() {
     return this.fetchOptions.headers;
