@@ -24,10 +24,9 @@
     chalk "^2.4.2"
     js-tokens "^4.0.0"
 
-"@hotwired/turbo@^8.0.4":
+"@hotwired/turbo@github:npezza93/turbo":
   version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-8.0.4.tgz#5c5361c06a37cdf10dcba4223f1afd0ca1c75091"
-  integrity sha512-mlZEFUZrJnpfj+g/XeCWWuokvQyN68WvM78JM+0jfSFc98wegm259vCbC1zSllcspRwbgXK31ibehCy5PA78/Q==
+  resolved "https://codeload.github.com/npezza93/turbo/tar.gz/dab5625b593ae6fd6fca54fc9d5da83c0c775c63"
 
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.3"
